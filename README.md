@@ -118,7 +118,7 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 #### Mobile
 
 - Fonte título: `17px`
-- Cada item(programa) do catálogo possui `50%` de largura
+- Cada item(programa) do catálogo possui `50%` de largura máxima
     - _Cada seção terá 2 itens(programas) por linha_
 
 ### Footer
