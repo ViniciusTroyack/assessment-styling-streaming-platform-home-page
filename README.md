@@ -57,7 +57,7 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 
 #### Desktop
 
-- A logo possui `92px` de largura
+- A logo possui `92px` de largura máxima
 - O ícone do usuário possui `32px` de largura
 - Itens menu: `#e5e5e5`
 - Item ativo menu: `#ffffff`
@@ -67,7 +67,7 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 
 #### Mobile
 
-- A logo possui `70px` de largura
+- A logo possui `70px` de largura máxima
 - O ícone do usuário possui `28px` de largura
 
 ### Destaque
@@ -90,7 +90,7 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 
 ##### Descrição
 
-- Logo programa em destaque: `650px` de largura
+- Logo programa em destaque: `650px` de largura máxima
 - Cor descrição: `#ffffff`
 - Fonte descrição: `26px`
 - Sombra do texto: `2px 2px 4px rgb(0 0 0 / 45%)`;
@@ -103,7 +103,7 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 
 ##### Descrição
 
-- Logo programa em destaque: `160px` de largura
+- Logo programa em destaque: `160px` de largura máxima
 - Fonte descrição: `12px`
 
 ### Catálogo
@@ -113,12 +113,13 @@ Não tenha pressa para conhecer o projeto antes de partir para ação!
 - Cor do título: `#e5e5e5`
 - Fonte título: `26px`
 - Background seção 'Continuar assistindo': `linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%)`
-- Cada item(programa) do catálogo possui `287px` de largura
+- Cada item(programa) do catálogo possui `287px` de largura máxima
 
 #### Mobile
 
 - Fonte título: `17px`
 - Cada item(programa) do catálogo possui `50%` de largura
+    - _Cada seção terá 2 itens(programas) por linha_
 
 ### Footer
 
