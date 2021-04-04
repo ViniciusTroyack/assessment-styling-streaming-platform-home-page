@@ -1,83 +1,286 @@
-/*
-Theme Name: Desenvolvimentos
-Theme URI: http://www.desenvolvimentos.com.br
-Author: Kenzie Academy BR
-Author URI: https://kenzie.com.br;
-Description: Descrição do thema.
-Version: 1.0
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-*/
-
-/* VARIÁVEIS */
-:root{}
-/* VARIÁVEIS */
-  
-  
-/* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-/* GERAL */
-  
 
-/* HTML */
-html{}
-/* HTML */
-  
+/*need define site color*/
 
-/* BODY */
-body{}
-/* BODY */
-  
+:root {
+    --color-background-site: #141414;
+    --font-geral-site: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    ;
+}
 
-/* HEADER */
-header{}
-/* HEADER */
-  
+/*geral style site*/
 
-/* FOOTER */
-footer{}
-/* FOOTER */
+body {
+    font-family: var(--font-geral-site);
+    background-color: var(--color-background-site);
+}
 
-  
-/* INICIAL */
-main{}
-/* INICIAL */
-  
+.title-sections {
+    font-size: 17px;
+    color: #fff;
+}
 
-/* EXTRAS */
+.hidden {
+    display: none;
+}
 
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-/* EXTRAS */
-  
+#container {
+    min-width: 320px;
+    padding: 0px 30px;
+}
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 400px){}
+button {
+    border: none;
+    font-size: 12px;
+}
 
-@media screen and (min-width: 800px){}
-/* MEDIA QUERIES */
+/*HEADER*/
+
+.img-background-header figure #logo-netflix {
+    max-width: 70px;
+    padding: 20px 0px;
+}
+
+#header-img-user {
+    position: relative;
+    left: 230px;
+    bottom: 65px;
+    display: flex;
+    width: 28px;
+}
+
+#header-img-user img {
+    width: 28px;
+    border-radius: 5px;
+    display: flex;
+}
+
+#img-background p {
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+}
+
+#img-background {
+    position: relative;
+}
+
+/*menu button*/
+
+.dropdown {
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 117px;
+    bottom: 48px;
+    display: flex;
+    max-width: 65px;
+}
+
+.drop-btn {
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--color-background-site);
+    color: #fff;
+}
+
+.list-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.list-dropdown li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.list-dropdown:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .list-dropdown {
+    display: block;
+}
+
+.dropdown:hover .drop-btn {
+    background-color: #3e8e41;
+}
+
+/*buttons assistir - Mais info*/
+
+.img-background-btn-assistir {
+    margin: 70px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.img-background-btn-assistir:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.img-background-btn-assistir img {
+    width: 10px;
+}
+
+.img-background-btn-maisinfo {
+    margin: 70px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #ffffff;
+}
+
+.img-background-btn-maisinfo:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+.img-background-btn-maisinfo img {
+    width: 10px;
+}
+
+/*seção continuar assistindo*/
+
+#title-continuar-assistindo {
+    position: relative;
+    top: -0px;
+}
+
+.container-assistir {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    top: -50px;
+}
+
+.container-assistir figure img {
+    width: 127px;
+    border-radius: 5px;
+}
+
+#title-continuar-assistindo {
+    position: relative;
+    top: -50px;
+}
+
+.container-movie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.container-movie figure img {
+    width: 127px;
+    border-radius: 5px;
+}
+
+/*FOOTER*/
+
+.footer-container {
+    color: gray;
+    margin-top: 50px;
+}
+
+.footer-container-text {
+    column-count: 2;
+}
+
+.footer-container-text p {
+    line-height: 40px;
+}
+
+/*icons*/
+
+.footer-icons {
+    margin: 15px 0px;
+}
+
+.footer-icons img {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.footer-container p:nth-child(3) {
+    font-size: 11px;
+}
+
+/*INICIO DA RESPONSIVIDADE*/
+
+@media screen and (min-width:375px) {
+    .container-assistir figure img {
+        width: 155px;
+    }
+    .container-movie figure img {
+        width: 155px;
+    }
+    .footer-container-text {
+        text-align: center;
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width:425px) {
+    #header-img-user {
+        left: 325px;
+    }
+    .dropdown {
+        left: 166px;
+    }
+    .container-assistir figure img {
+        width: 175px;
+    }
+    .container-movie figure img {
+        width: 175px;
+    }
+    .footer-container-text {
+        text-align: center;
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width:550px) {
+    #header-img-user {
+        left: 434px;
+    }
+    .dropdown {
+        left: 220px;
+    }
+    .container-assistir figure img {
+        width: 230px;
+    }
+    .container-movie figure img {
+        width: 230px;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .dropdown {
+        left: 250px;
+    }
+    #header-img-user {
+        left: 520px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    #header-img-user {
+        left: 700px;
+    }
+}
